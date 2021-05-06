@@ -16,20 +16,20 @@ import java.util.List;
  * @author: junyi Xu
  * @description:
  */
-@Table(name = "`order`")
-@Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
+//@Table(name = "`order`")
+//@Entity
+//@Data
+//@NoArgsConstructor
+//@AllArgsConstructor
+//@Builder
 public class Order implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String customer;
 
-    @ManyToMany(targetEntity=Goods.class)
-    @JoinTable(name = "order_goods", joinColumns = @JoinColumn(name = "order_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "goods_id", referencedColumnName = "id"))
+//    @ManyToMany(targetEntity=Goods.class)
+//    @JoinTable(name = "order_goods", joinColumns = @JoinColumn(name = "order_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "goods_id", referencedColumnName = "id"))
     private List<Goods> goods = new ArrayList<>();
 }

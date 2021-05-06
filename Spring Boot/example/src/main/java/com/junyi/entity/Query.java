@@ -8,7 +8,7 @@ import lombok.Data;
  * @author: junyi Xu
  * @description:
  */
-@Data
+//@Data
 public class Query {
     //数据数量
     private Integer pageSize;

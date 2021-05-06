@@ -19,28 +19,28 @@ import java.util.List;
 @RequestMapping("order")
 public class OrderController {
 
-    @Autowired
-    OrderRepository orderRepository;
-
-    @GetMapping("/getAll")
-    public List<Order> getAll() {
-        List<Order> orders = orderRepository.findAll();
-        return orders;
-    }
-
-    @GetMapping("/getOne")
-    public Order getOne() {
-        return orderRepository.findById(1).get();
-        // 不能使用下面的语句，会报错
-        //orderRepository.getOne(1);
-    }
-    @GetMapping("/save")
-    public Order save() {
-        Order order = Order.builder()
-                .id(10)
-                .customer("xiaoming")
-                .build();
-        order = orderRepository.save(order);
-        return order;
-    }
+//    @Autowired
+//    OrderRepository orderRepository;
+//
+//    @GetMapping("/getAll")
+//    public List<Order> getAll() {
+//        List<Order> orders = orderRepository.findAll();
+//        return orders;
+//    }
+//
+//    @GetMapping("/getOne")
+//    public Order getOne() {
+//        return orderRepository.findById(1).get();
+//        // 不能使用下面的语句，会报错
+//        //orderRepository.getOne(1);
+//    }
+//    @GetMapping("/save")
+//    public Order save() {
+//        Order order = Order.builder()
+//                .id(10)
+//                .customer("xiaoming")
+//                .build();
+//        order = orderRepository.save(order);
+//        return order;
+//    }
 }

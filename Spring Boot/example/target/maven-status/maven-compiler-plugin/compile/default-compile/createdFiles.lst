@@ -1,0 +1,15 @@
+com\junyi\controller\TestController.class
+com\junyi\entity\Query.class
+com\junyi\entity\Goods.class
+com\junyi\repository\GoodsRepository.class
+com\junyi\repository\OrderRepository.class
+com\junyi\controller\OrderController.class
+com\junyi\controller\GoodsController$1.class
+com\junyi\entity\Order$OrderBuilder.class
+com\junyi\controller\GoodsController.class
+com\junyi\aaa.class
+com\junyi\entity\Order.class
+com\junyi\Application.class
+com\junyi\entity\Goods$GoodsBuilder.class
+com\junyi\Base64Utils.class
+com\junyi\MyInfoContributor.class

@@ -14,9 +14,11 @@ import org.springframework.stereotype.Repository;
  * @description:
  */
 @Repository
-public interface GoodsRepository extends JpaRepository<Goods, Integer>
-        , QueryByExampleExecutor<Goods>, JpaSpecificationExecutor<Goods> {
+public interface GoodsRepository
+//        extends JpaRepository<Goods, Integer>
+//        , QueryByExampleExecutor<Goods>, JpaSpecificationExecutor<Goods>
+{
 
-    @Query("select g from Goods g where g.name=?1")
-    public Goods getGoodsByNameWithQuery(String name);
+//    @Query("select g from Goods g where g.name=?1")
+//    public Goods getGoodsByNameWithQuery(String name);
 }

@@ -14,15 +14,15 @@ import java.io.Serializable;
  * @author: junyi Xu
  * @description:
  */
-@Table(name = "goods")
-@Entity
-@Builder
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
+//@Table(name = "goods")
+//@Entity
+//@Builder
+//@Data
+//@NoArgsConstructor
+//@AllArgsConstructor
 public class Goods implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
 }
