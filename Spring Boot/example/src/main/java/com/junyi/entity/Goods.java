@@ -16,10 +16,10 @@ import java.io.Serializable;
  */
 //@Table(name = "goods")
 //@Entity
-//@Builder
-//@Data
-//@NoArgsConstructor
-//@AllArgsConstructor
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Goods implements Serializable {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)

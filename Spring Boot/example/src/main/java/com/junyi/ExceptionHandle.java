@@ -16,7 +16,6 @@ import org.springframework.web.servlet.function.ServerResponse;
 @ControllerAdvice
 @Slf4j
 public class ExceptionHandle {
-    分布式
 
     public static final String ERROR_MESSAGE = "不好意思报错了";
 

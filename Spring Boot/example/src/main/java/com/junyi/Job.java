@@ -1,12 +1,21 @@
 package com.junyi;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.core.annotation.Order;
+import org.springframework.http.*;
 import org.springframework.stereotype.Component;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
@@ -17,19 +26,13 @@ import java.util.concurrent.ThreadPoolExecutor;
  */
 @Component
 @Slf4j
+@Order(value = 999)
 public class Job implements ApplicationRunner {
 
-    @Autowired
-    ThreadPoolExecutor executor;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        executor.execute(() -> {
-            log.info("start");
-            ArrayList<Integer> list = null;
-            for (Integer integer : list) {
-                log.info(integer + "");
-            }
-        });
+        Thread.sleep(1_000);
+        log.info("mission one");
     }
 }
